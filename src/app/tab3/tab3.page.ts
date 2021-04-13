@@ -18,6 +18,6 @@ export class Tab3Page {
     dataNote.isiData = dataNote.isiDataColl.valueChanges();
   }
   Hapus() {
-    this.afs.collection('cities').doc('DC').delete();
+    this.afs.collection('dataNote').doc(this.dataNote.judulp).delete();
   }
 }

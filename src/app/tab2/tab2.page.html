@@ -14,7 +14,7 @@
           <ion-card>
             <ion-img [src]="data.link"></ion-img>
             <ion-card-header>
-              <ion-card-subtitle>{{data.tanggal.toLocaleString()}}</ion-card-subtitle>
+              <ion-card-subtitle>{{data.tanggal.toLocaleString()}} {{data.nilai}}</ion-card-subtitle>
               <ion-card-title (click)="pindah(data)">{{data.judul}}</ion-card-title>
             </ion-card-header>
             <ion-card-content>
