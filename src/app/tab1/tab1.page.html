@@ -9,6 +9,8 @@
 <ion-content [fullscreen]="true">
   <ion-input placeholder="Judul" [(ngModel)]="Judul"></ion-input>
   <ion-input placeholder="Isi" [(ngModel)]="Isi"></ion-input>
-  <ion-input placeholder="Isi" [(ngModel)]="Tanggal"></ion-input>
-  <ion-input placeholder="Isi" [(ngModel)]="Nilai"></ion-input>
+  <ion-input placeholder="Nilai" [(ngModel)]="Nilai"></ion-input>
+
+  <ion-button (click)="uploadFoto()">Select Foto</ion-button>
+  <ion-button (click)="TambahNotes()">Simpan</ion-button>
 </ion-content>
