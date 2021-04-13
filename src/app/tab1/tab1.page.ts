@@ -43,7 +43,7 @@ export class Tab1Page {
           this.dataNote.isiDataColl.doc(this.Judul).set({
             judul : this.Judul,
             isi: this.Isi,
-            tanggal: this.Tanggal,
+            tanggal: this.Tanggal.toDateString(),
             nilai: this.Nilai,
             link : this.Link
           });

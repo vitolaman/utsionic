@@ -7,11 +7,18 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+        <ion-card>
+          <ion-img [src]="dataNote.linkp"></ion-img>
+          <ion-card-header>
+            <ion-card-subtitle>{{dataNote.tanggalp.toLocaleString()}}</ion-card-subtitle>
+            <ion-card-title>{{dataNote.judulp}}</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            {{dataNote.isip}}
+          </ion-card-content>
+          <ion-button color="danger" (click)="Hapus()">Hapus</ion-button>
+        </ion-card>
+
+
 </ion-content>

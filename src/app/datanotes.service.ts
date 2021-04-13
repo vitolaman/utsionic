@@ -18,6 +18,12 @@ export class DatanotesService {
   public isiData : Observable<datanote[]>;
   public isiDataColl : AngularFirestoreCollection<datanote>
 
+  public judulp : string;
+  public tanggalp : string;
+  public nilaip : string;
+  public linkp : string;
+  public isip : string;
+
   constructor(
     platform: Platform,
     afs : AngularFirestore
@@ -133,7 +139,7 @@ export interface Photo{
 export interface datanote {
   judul : string,
   isi : string,
-  tanggal : Date,
+  tanggal : string,
   nilai : number
   link : string
 }
